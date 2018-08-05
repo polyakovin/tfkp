@@ -1,0 +1,189 @@
+html,
+body{
+font-size:14pt;
+height: 100%;
+}
+
+#body {
+width:1024px;
+margin:0 auto;
+box-sizing: border-box;
+min-height: 100%;
+padding-bottom: 90px;
+}
+
+#footer {
+font-size:10pt;
+text-align: right;
+width:1024px;
+margin:0 auto;
+height: 50px;
+margin-top: -50px;
+padding-right: 50px;
+}
+
+#footer a {
+color:gray;
+}
+
+center {
+font-size:18pt;
+font-weight:900;
+margin:15px auto 10px auto;
+}
+
+ol {
+margin:-10px 10px 10px 43px;
+font-size:12pt;
+}
+
+ol li {
+margin:0 0 10px 0;
+}
+
+ol ol {
+margin:7px 10px 10px -15px;
+}
+
+.cyrilic { 
+list-style-type: none; /* Прячем исходную нумерацию */
+}
+
+.cyrilic li::before {
+margin-right: 5px; /* Расстояние от буквы до текста */
+width: 1em; /* Ширина */
+text-align: right; /* Выравнивание по правому краю */
+display: inline-block; /* Строчно-блочный элемент */
+}
+
+.cyrilic li:nth-child(1)::before { content: 'а)'; }
+.cyrilic li:nth-child(2)::before { content: 'б)'; }
+.cyrilic li:nth-child(3)::before { content: 'в)'; }
+.cyrilic li:nth-child(4)::before { content: 'г)'; }
+.cyrilic li:nth-child(5)::before { content: 'д)'; }
+.cyrilic li:nth-child(6)::before { content: 'е)'; }
+.cyrilic li:nth-child(7)::before { content: 'ё)'; }
+.cyrilic li:nth-child(8)::before { content: 'ж)'; }
+.cyrilic li:nth-child(9)::before { content: 'з)'; }
+.cyrilic li:nth-child(10)::before { content: 'и)'; }
+
+.cyrilic ul li::before {
+margin-right: 5px; /* Расстояние от буквы до текста */
+width: 0em; /* Ширина */
+text-align: right; /* Выравнивание по правому краю */
+display: none; /* Строчно-блочный элемент */
+}
+.cyrilic ul li:nth-child::before { content: ''; }
+
+ol ol ul {
+margin:7px 10px 7px 0;
+list-style-type:disc;
+}
+
+h1 {
+font-size:24pt;
+text-align:center;
+}
+
+h1 span{
+font-size:18pt;
+}
+
+table {
+width:1002px;
+margin:0 auto 20px auto;
+border:1px solid black;
+text-align:center;
+border-spacing:0;
+border-collapse:collapse;
+font-size:12pt;
+}
+
+#the_ones {
+width:300px;
+margin:0 auto 20px auto;
+}
+
+tr:nth-child(odd) {background:#ddd}
+tr:nth-child(even) {background:#fff}
+
+th {background:#fff}
+
+th, td {
+padding:5px;
+margin:0;
+border:1px solid black;
+}
+
+.name {
+text-align:left;
+}
+
+#rules_button, #tasks_list_button, #participants_button, #the_ones_button, #exam_program_button, #exam_tasks_button {
+padding:5px 0 5px 42px;
+margin-left:15px;
+height:32px;
+}
+
+#rules_button {background:url(../img/rules.jpg) no-repeat}
+#tasks_list_button {background:url(../img/tasks_list.jpg) no-repeat}
+#participants_button {background:url(../img/participants.jpg) no-repeat}
+#the_ones_button {background:url(../img/the_ones.jpg) no-repeat}
+#exam_program_button {background:url(../img/exam_program.jpg) no-repeat}
+#exam_tasks_button {background:url(../img/exam_tasks.jpg) no-repeat}
+
+.active_element {
+font-weight:900;
+color:brown;
+cursor:pointer;
+text-decoration:none;
+display:block;
+}
+
+tr .active_element {
+display:table-cell;
+}
+
+.active_element:hover {
+text-decoration:underline;
+}
+
+.cool {
+color:green;
+font-weight:900;
+}
+
+.uncool {
+color:red;
+font-weight:900;
+}
+
+.additional_info {
+font-size:10pt;
+}
+
+.success{
+text-align:center;
+color:green;
+font-weight:900;
+}
+
+.fail{
+text-align:center;
+color:red;
+font-weight:900;
+}
+
+#back{
+width:44px;
+height:44px;
+background-image:url(../img/back.jpg);
+position:absolute;
+top:-7px;
+left:200px;
+display:block;
+}
+
+#back:hover{
+background-image:url(../img/back_d.jpg);
+}
